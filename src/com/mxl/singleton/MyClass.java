@@ -19,14 +19,18 @@ public class MyClass {
 	
 	public static MyClass getInstance(){
 		if (Instance == null) {
+//			System.out.println("Instance == null进来了 非synchronized块");
 			synchronized (o) {
 				if (Instance == null) {
+					System.out.println("Instance == null进来了 synchronized块");
 					Instance = new MyClass();
 				}
 			}
 		}
 		return Instance;
 	}
+
+
 	
 	public static void main(String[] args) {
 		Thread t1 = new Thread(new Runnable() {

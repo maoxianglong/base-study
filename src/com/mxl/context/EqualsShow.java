@@ -1,14 +1,15 @@
 package com.mxl.context;
 
-import java.security.cert.Certificate;
-import java.security.cert.CertificateEncodingException;
 import java.sql.Timestamp;
 import java.util.Date;
 import java.util.HashSet;
-import java.util.Iterator;
-import java.util.List;
 import java.util.Set;
 
+/**
+ * 在重写euqal方法的时候需要遵循以下原则
+ * 1、若x.equal(y)为true，则y.equal(x)也要返回true
+ * 2、若x.equal(y)为true，y.equal(z)为true，则x.equal(z)也为true
+ */
 public class EqualsShow {
 
 	public static void main(String[] args) {
@@ -32,11 +33,12 @@ public class EqualsShow {
 		System.out.println(timestamp.equals(d1));//false
 		
 		Set<Object> sets = new HashSet<Object>();
-		
-		sets.add(d1);
+
+		System.out.println("first : " + sets.add(d1));
 		sets.add(timestamp);
-		
+
+		System.out.println("twice : " + sets.add(d1));
 		System.out.println(sets.size());
 	}
-	
+
 }
