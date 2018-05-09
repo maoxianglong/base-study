@@ -1,11 +1,14 @@
 package com.mxl.thread;
 
+import java.util.concurrent.locks.ReentrantLock;
+
 public class ThreadTest02 {
 	
 	private static String str = null;
 	
 	public static void setValue(String value){
 		synchronized (ThreadTest02.class) {
+
 			str = value;
 			try {
 				Thread.sleep(2000);
