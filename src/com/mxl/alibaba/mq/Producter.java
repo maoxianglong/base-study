@@ -1,3 +1,4 @@
+/*
 package com.mxl.alibaba.mq;
 
 //import com.aliyun.openservices.ons.api.*;
@@ -40,3 +41,4 @@ public class Producter {
 
 
 }
+*/
