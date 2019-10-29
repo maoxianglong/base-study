@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 package com.mxl.alibaba.mq;
 
 
@@ -9,7 +8,6 @@ import java.util.Properties;
 
 public class ConsumerA {
 
-=======
 ///*
 //package com.mxl.alibaba.mq;
 //
@@ -21,7 +19,7 @@ public class ConsumerA {
 //
 //public class ConsumerA {
 //
->>>>>>> origin/master
+
 //    public static void main(String[] args) {
 //        Properties properties = new Properties();
 //        // 您在 MQ 控制台创建的 Consumer ID
@@ -45,11 +43,9 @@ public class ConsumerA {
 //        consumer.start();
 //        System.out.println("Consumer Started");
 //    }
-<<<<<<< HEAD
 
 }
-=======
 //
 //}
 //*/
->>>>>>> origin/master
+

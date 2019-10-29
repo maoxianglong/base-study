@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 package com.mxl.bloomFilter;
 
 //import com.google.common.hash.BloomFilter;
@@ -27,7 +26,6 @@ public class BloomFilterTest {
         // 过滤机制，算法复杂，其存在一定的hash碰撞率,存在一定的误伤率，这个误伤率可以
         // 设置，误伤率越小，采用的哈希函数越多，所需容量自然就越大，越准确，根据实际场景
         //设置。
-=======
 //package com.mxl.bloomFilter;
 //
 //import com.google.common.hash.BloomFilter;
@@ -57,13 +55,12 @@ public class BloomFilterTest {
 //        // 过滤机制，算法复杂，其存在一定的hash碰撞率,存在一定的误伤率，这个误伤率可以
 //        // 设置，误伤率越小，采用的哈希函数越多，所需容量自然就越大，越准确，根据实际场景
 //        //设置。
->>>>>>> origin/master
+
 //        bf = BloomFilter.create(Funnels.integerFunnel(),NUMBER,0.001);
 //
 //        for (int i =0; i < NUMBER; i++){
 //            bf.put(i);
 //        }
-<<<<<<< HEAD
 
     }
 
@@ -92,7 +89,6 @@ public class BloomFilterTest {
                 flag = UUID.randomUUID().hashCode();
             }
 
-=======
 //
 //    }
 //
@@ -121,7 +117,7 @@ public class BloomFilterTest {
 //                flag = UUID.randomUUID().hashCode();
 //            }
 //
->>>>>>> origin/master
+
 //            if (bf.mightContain(flag)){
 //                if(set.contains(flag)){
 //                    right++;
@@ -129,7 +125,6 @@ public class BloomFilterTest {
 //                    wrong++;
 //                }
 //            }
-<<<<<<< HEAD
 
         }
 
@@ -138,7 +133,6 @@ public class BloomFilterTest {
     }
 
 }
-=======
 //
 //        }
 //
@@ -147,4 +141,4 @@ public class BloomFilterTest {
 //    }
 //
 //}
->>>>>>> origin/master
+
